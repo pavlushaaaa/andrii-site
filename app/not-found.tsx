@@ -1,0 +1,1 @@
+export default function NotFound(){return <main style={{minHeight:'100vh',display:'grid',placeItems:'center',padding:'24px'}}><div><h1 style={{fontSize:'clamp(52px,9vw,140px)',lineHeight:.9}}>Ви зайшли трохи надто далеко в інтернет.</h1><a href="/" style={{fontWeight:800}}>Повернутися додому →</a></div></main>}
