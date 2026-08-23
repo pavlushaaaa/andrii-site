@@ -3,10 +3,10 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Андрій Лісовий — маркетинг та комунікації',
-  description: 'Андрій Лісовий — маркетинг- і комунікаційний лідер із Києва. Head of Marketing & Communications у Mission Possible. Стратегія, контент, LinkedIn, стартапи, освіта та персональне позиціонування.',
+  description: 'Андрій Лісовий — Marketing & Communications Leader. Personal brands, community-centered marketing, LinkedIn, освіта та консалтинг.',
   openGraph: {
     title: 'Андрій Лісовий — маркетинг та комунікації',
-    description: 'Маркетинг, комунікації, позиціонування, контент і системи, які перетворюють увагу на репутацію та можливості.',
+    description: 'Андрій Лісовий — Marketing & Communications Leader. Personal brands, community-centered marketing, LinkedIn, освіта та консалтинг.',
     type: 'website',
     locale: 'uk_UA'
   },
