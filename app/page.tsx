@@ -113,8 +113,9 @@ export default function Home() {
         <p>Консультація, проєкт, лекція, подкаст, колаба або просто хороша причина написати.</p>
         <div className="contact-actions"><a href={TELEGRAM} target="_blank" rel="noopener" className="mega-link">Написати мені ↗</a></div>
         <div className="social-row">{socials.map(s => <a key={s.href} href={s.href} target="_blank" rel="noopener">{s.label}</a>)}</div>
-        <img className="contact-spikes" src="assets/decor/chrome-spikes.png" alt="" />
-      </div></section>
+      </div>
+      <img className="contact-spikes" src="assets/decor/chrome-spikes-tight.png" alt="" />
+      </section>
     </main>
 
     <footer className="footer">
