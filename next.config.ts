@@ -2,8 +2,7 @@ import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   output: 'export',
-  // Site is served from https://pavlushaaaa.github.io/andrii-site
-  basePath: process.env.NODE_ENV === 'production' ? '/andrii-site' : '',
+  // Site is served from https://andriilisovyi.com
   images: { unoptimized: true },
 };
 

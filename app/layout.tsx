@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://andriilisovyi.com'),
   title: 'Андрій Лісовий — маркетинг та комунікації',
   description: 'Андрій Лісовий — маркетолог і експерт із комунікацій, персонального бренду та розвитку комʼюніті. Head of Marketing & Communications у Mission Possible, викладач Projector, автор подкасту sip&talk.',
   openGraph: {
