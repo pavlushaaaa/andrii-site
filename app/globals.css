@@ -53,5 +53,5 @@ html,body,button,input,textarea,select{font-family:var(--font)!important}
 @media(max-width:520px){.hero-copy>p:first-of-type{font-size:26px}.hero-star{width:155px!important;right:-42px!important}.sip-logo{width:90%}.speaking h2{font-size:39px}}
 /* Header sizing refinement */
 .wordmark{font-size:24px}
-.desktop-nav{font-size:14px}
-.head-cta{font-size:18px}
+.desktop-nav{font-size:20px}
+.head-cta{font-size:20px}
