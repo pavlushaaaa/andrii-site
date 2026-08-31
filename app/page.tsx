@@ -20,8 +20,7 @@ export default function Home() {
       <section className="hero shell" id="top">
         <div className="hero-copy">
           <h1>Building Personal Brands <span>&</span> Community-Centered Marketing for People and Teams <em>ツ</em></h1>
-          <p>Мене звати Андрій Лісовий. Я маркетолог і експерт із комунікацій, персонального бренду та розвитку комʼюніті.</p>
-          <p className="hero-sub">Зараз я Head of Marketing & Communications у Mission Possible. Консультую бренди та експертів із маркетингу, комунікацій і особистого бренду, викладаю маркетинг у Projector, веду подкаст sip&talk та розвиваю власні освітні й карʼєрні проєкти.</p>
+          <p>Андрій Лісовий — маркетолог та експерт із комунікацій, розвитку персональних брендів і побудови комʼюніті.</p>
           <a className="text-cta" href="#projects">Подивитися, що я роблю ↓</a>
         </div>
         <div className="hero-photo"><img src="assets/images/andrii-hero.jpg" alt="Андрій Лісовий" /><div className="photo-caption"><span>ANDRII LISOVYI</span><span>MARKETING & COMMS</span></div></div>
