@@ -19,14 +19,13 @@ export default function Home() {
     <main>
       <section className="hero shell" id="top">
         <div className="hero-copy">
-          <div className="kicker">KYIV / MARKETING / PEOPLE / INTERNET</div>
           <h1>Building Personal Brands <span>&</span> Community-Centered Marketing for People and Teams <em>ツ</em></h1>
-          <p>Мене звати Андрій. Я працюю з маркетингом і комунікаціями: будую бренди, комʼюніті та персональні бренди людей, яким є що сказати.</p>
-          <p className="hero-sub">Зараз — Head of Marketing & Communications у Mission Possible. Паралельно консультую, викладаю, менторю і запускаю власні штуки.</p>
+          <p>Мене звати Андрій Лісовий. Я маркетолог і експерт із комунікацій, персонального бренду та розвитку комʼюніті.</p>
+          <p className="hero-sub">Зараз я Head of Marketing & Communications у Mission Possible. Консультую бренди та експертів із маркетингу, комунікацій і особистого бренду, викладаю маркетинг у Projector, веду подкаст sip&talk та розвиваю власні освітні й карʼєрні проєкти.</p>
           <a className="text-cta" href="#projects">Подивитися, що я роблю ↓</a>
         </div>
         <div className="hero-photo"><img src="assets/images/andrii-hero.jpg" alt="Андрій Лісовий" /><div className="photo-caption"><span>ANDRII LISOVYI</span><span>MARKETING & COMMS</span></div></div>
-        <img className="hero-star" src="assets/decor/chrome-star.png" alt="" />
+        <img className="hero-star" src="assets/decor/chrome-star-cutout.png" alt="" />
       </section>
 
       <section className="proof"><div className="shell proof-grid"><div><b>7+ років</b><span>у маркетингу та комунікаціях</span></div><div><b>100+ людей</b><span>пройшли через мої курси, лекції та менторство</span></div><div><b>100+ консультацій</b><span>про маркетинг, контент, LinkedIn і карʼєру</span></div></div></section>
@@ -58,17 +57,21 @@ export default function Home() {
 
       <section className="section projects shell" id="projects">
         <div className="section-label">03 / МОЇ ПРОЄКТИ</div>
-        <div className="projects-head"><h2 className="wide-title">Вилюблені.</h2><p>Три штуки, які я будую не тому, що «треба для personal brand».</p></div>
+        <div className="projects-head"><h2 className="wide-title">Мої проєкти:</h2></div>
         <div className="project-stack">
           {projects.map((p, i) => <article className={`project-card project-card-${i + 1}`} key={p.title}>
             <div className="project-copy">
               <div className="project-meta"><span>{p.n}</span><span>{p.meta}</span></div>
-              <h3>{p.title}</h3>
+              {p.logo ? <><img className="sip-logo" src={p.logo} alt={p.title} /><h3 className="sr-only">{p.title}</h3></> : <h3>{p.title}</h3>}
               <p>{p.text}</p>
               <p className="project-note">{p.note}</p>
               <a className="arrow-link" target="_blank" rel="noopener" href={p.href}>{p.cta}</a>
             </div>
-            <div className="project-visual"><img src={p.image} alt="" /></div>
+            <div className={`project-visual${p.screen ? ' slay-visual' : ''}`}>
+              {p.screen
+                ? <><img className="slay-bg" src={p.image} alt="" /><img className="slay-screen" src={p.screen.src} alt={p.screen.alt} /></>
+                : <img src={p.image} alt="" />}
+            </div>
           </article>)}
         </div>
       </section>
@@ -81,7 +84,7 @@ export default function Home() {
 
       <section className="section shell work" id="work">
         <div className="section-label">05 / ПРАЦЮВАТИ ЗІ МНОЮ</div>
-        <div className="work-intro"><h2>Так, зі мною<br />можна попрацювати.</h2><div><p>Не агенція. Не «повний цикл». Не 17 пакетів послуг.</p><p>Є кілька форматів.</p></div></div>
+        <div className="work-intro"><h2>Як зі мною можна попрацювати?</h2></div>
         <div className="work-layout">
           <div className="service-list">
             {services.map((s, i) => <article className={`service ${open === i ? 'active' : ''}`} key={s.n}>
@@ -96,22 +99,13 @@ export default function Home() {
       <section className="speaking dark" id="speaking"><div className="shell speaking-grid">
         <div className="speaking-copy">
           <div className="section-label light">06 / PUBLIC SPEAKING</div>
-          <h2>Можу щось<br />розказати<br />зі сцени.</h2>
-          <p>Виступаю на конференціях, корпоративних подіях, у школах, комʼюніті та подкастах.</p>
+          <h2>Виступаю на конференціях, корпоративних подіях, у школах, курсах, подкастах.</h2>
           <a className="arrow-link orange-link" href={TELEGRAM} target="_blank" rel="noopener">Запросити виступити ↗</a>
         </div>
         <div className="topics">
           <div className="topics-label">Найчастіше говорю про:</div>
           {topics.map((t, i) => <div className="topic" key={t}><span>0{i + 1}</span><b>{t}</b></div>)}
         </div>
-        <img className="speaking-art" src="assets/decor/ascii-moose.png" alt="" />
-      </div></section>
-
-      <section className="media-strip"><div className="shell media-grid">
-        <div className="media-copy"><div className="section-label">07 / ДЕ ЩЕ МЕНЕ ЗНАЙТИ</div><h2>Контент теж<br />частина роботи.</h2></div>
-        <a className="media-tile orange-tile" href="https://t.me/slayworkk" target="_blank" rel="noopener"><span>Telegram</span><b>Слей вакансії</b><i>↗</i></a>
-        <a className="media-tile" href="https://www.youtube.com/@sip_talk_podcast" target="_blank" rel="noopener"><span>Podcast</span><b>sip&talk</b><i>▶</i></a>
-        <div className="media-art"><img className="branches" src="assets/decor/branches.png" alt="" /></div>
       </div></section>
 
       <section className="contact" id="contact"><div className="shell contact-inner">
