@@ -114,7 +114,7 @@ export default function Home() {
         <div className="contact-actions"><a href={TELEGRAM} target="_blank" rel="noopener" className="mega-link">Написати мені ↗</a></div>
         <div className="social-row">{socials.map(s => <a key={s.href} href={s.href} target="_blank" rel="noopener">{s.label}</a>)}</div>
       </div>
-      <img className="contact-spikes" src="assets/decor/chrome-spikes-tight.png" alt="" />
+      <img className="contact-spikes" src="assets/decor/chrome-star-full.png" alt="" />
       </section>
     </main>
 
