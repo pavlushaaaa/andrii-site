@@ -118,9 +118,11 @@ export default function Home() {
       </div></section>
     </main>
 
-    <footer className="footer shell">
-      <div><b>ANDRII LISOVYI</b><span>Building Personal Brands & Community-Centered Marketing for People and Teams ツ</span></div>
-      <div><span>Kyiv, Ukraine.</span><span>© Andrii Lisovyi, 2026</span></div>
+    <footer className="footer">
+      <div className="shell footer-inner">
+        <div><b>ANDRII LISOVYI</b><span>Building Personal Brands & Community-Centered Marketing for People and Teams ツ</span></div>
+        <div><span>Kyiv, Ukraine.</span><span>© Andrii Lisovyi, 2026</span></div>
+      </div>
     </footer>
   </>;
 }
